@@ -1,5 +1,5 @@
 body{
-    padding: 60px;
+    padding: 70px;
     
 }
 .header-top{
@@ -99,7 +99,9 @@ hr{
 }
 
 /* popular section started  */
-
+.section-title{
+    text-align: center;
+}
 section h2{
     color: #3A3A3A;
 font-feature-settings: 'clig' off, 'liga' off;
@@ -116,7 +118,7 @@ font-family: Inter;
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
-line-height: 143%; /* 20.02px */
+line-height: 20px; /* 20.02px */
 letter-spacing: 0.252px;
 
 padding-left: 5px;
@@ -144,7 +146,7 @@ line-height: 150%; /* 36px */
 .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    gap: 30px;
 }
 .collection{
    text-align: start;
@@ -152,12 +154,63 @@ flex-shrink: 0;
 border-radius: 5px;
 background: #FFF;
 box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-width: 329px;
+width: 350px;
 
+padding-left: 20px;
+position: relative;
+top: -20px;
 }
-.collection h2{
-    padding: 0px;
+
+ 
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+text-align: right;
 }
+/* main last section  */
+
+.main-last{
+    display: flex;
+}
+.main-last div{
+    width: 50%;
+}
+/* footer section started  */
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #0A0826;
+    color: #FFF;
+    padding: 20px 10px;
+}
+footer > p{
+    color: var(--Text-Gray-300, #D9DBE1);
+font-feature-settings: 'liga' off;
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+}
+footer h2{
+    color: #FFF;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0px;
+}
+
+
 /* responsive style started  */
 @media screen and ( max-width: 576px ){
     body{
@@ -178,7 +231,6 @@ width: 329px;
         text-align: center;
     }
     .main-camera>img{
-        padding: 0px;
         height: 190px;
         width: 200px;
     }
@@ -196,5 +248,15 @@ width: 329px;
     }
     .sponsor>img{
         width: 30px;
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-last{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .main-last div{
+        width:100%;
     }
 }
