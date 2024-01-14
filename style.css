@@ -1,0 +1,200 @@
+body{
+    padding: 60px;
+    
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-nav li,a{
+    list-style: none;
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration:solid;
+    padding-right: 15px;
+
+}
+.header-right-head{
+    color: #3A3A3A;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: relative;
+top: -30px;
+}
+ul{
+    display: flex;
+    
+}
+.header-mid{
+    display: flex;
+}
+.header-mid > div{
+    width: 50%;
+}
+.header-mid-text h2{
+    color: #3A3A3A;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: 70px; /* 134.615% */
+}
+.heder-mid-text>p{
+    color: #3A3A3A;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.btn{
+    display: inline-flex;
+padding: 10px 24px;
+align-items: flex-start;
+gap: 8px;
+border-radius: 41px;
+background: #E02C6D;
+color: #FFF;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border: none;
+}
+.main-camera{
+    background-image: url("influencer-gear/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    left: 80px;
+ 
+}
+.main-camera>div{
+    padding-top: 30px;
+}
+.sponsor{
+    padding: 60px;
+    
+    
+}
+.sponsor>img{
+    
+    padding:10px 30px;
+}
+hr{
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+}
+
+/* popular section started  */
+
+section h2{
+    color: #3A3A3A;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 70px; /* 250% */
+padding-left: 15px;
+}
+.collection p{
+    color: var(--Gray-50, #787885);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 143%; /* 20.02px */
+letter-spacing: 0.252px;
+
+padding-left: 5px;
+}
+.collection>div{
+    display: flex;
+}
+.collection-title{
+    color: var(--Text-Gray-900, #18191F);
+font-feature-settings: 'liga' off;
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 142.857% */
+}
+.price{
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 36px */
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.collection{
+   text-align: start;
+flex-shrink: 0;
+border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+width: 329px;
+
+}
+.collection h2{
+    padding: 0px;
+}
+/* responsive style started  */
+@media screen and ( max-width: 576px ){
+    body{
+        padding: 10px;
+        text-align: center;
+    }
+    header>.header-top{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .header-mid{
+        flex-direction: column-reverse;
+    
+    }
+    .header-mid> div{
+        width: 100%;
+        text-align: center;
+    }
+    .main-camera>img{
+        padding: 0px;
+        height: 190px;
+        width: 200px;
+    }
+    .main-camera{
+       left: 0px;
+       width: 250px;
+    }
+    .header-mid-text{
+        text-align: center;
+        width: 100%;
+    }
+    .sponsor{
+        flex-wrap: wrap;
+        padding: 10px 10px;
+    }
+    .sponsor>img{
+        width: 30px;
+    }
+}
